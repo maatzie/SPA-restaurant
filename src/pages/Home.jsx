@@ -1,5 +1,7 @@
-import { useState, useEffect} from 'react';
+import React, { useState, useEffect} from 'react';
 import {getAllCategories } from '../api';
+import {Preloader} from '../components/Preloader';
+import { CategoryList } from '../components/CategoryList';
 
 function Home() {
     const [catalog, setCatalog] = useState([]);
@@ -9,7 +11,12 @@ function Home() {
             setCatalog(data.categories);
         })
     }, []);
-    return <h1>Home</h1>
+    return <div>
+        { catalog.length ? 
+            <CategoryList catalog={catalog}/> 
+            : <Preloader/>
+        }
+    </div>
 }
 
 export {Home};
