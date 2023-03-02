@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import {useParams} from 'react-router-dom';
+import {useParams, Link} from 'react-router-dom';
 import {getFilteredCategory} from '../api';
 import { Preloader } from '../components/Preloader';
 import { MealList } from '../components/MealList';
@@ -14,6 +14,7 @@ function Category() {
         })
     }, [name]);
     return <div>
+        <Link to={`/`} className="btn deep-orange accent-3">Go back</Link>
         {meals.length ? (
             <MealList meals={meals}/>
         ) : <Preloader/>}

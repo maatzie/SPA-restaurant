@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
 
+
 function CategoryItem(props) {
     const {
         idCategory: id,
         strCategory: name,
         strCategoryThumb: image,
         strCategoryDescription: description,
-    } = props;
+    } = props; 
+
     return <div className="card" id={id}>
     <div className="card-image">
       <img src={image} alt={name}/>
