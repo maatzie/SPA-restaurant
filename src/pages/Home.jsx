@@ -16,6 +16,7 @@ function Home() {
             <CategoryList catalog={catalog}/> 
             : <Preloader/>
         }
+        
     </div>
 }
 
