@@ -16,7 +16,7 @@ function Meal(props) {
       <p>{}</p>
     </div>
     <div className="card-action">
-        <Link to={`/category/${name}`} className="btn deep-orange accent-3">Open recipe</Link>
+        <Link to={`/meal/${id}`} className="btn deep-orange accent-3">Open recipe</Link>
     </div>
   </div>
 }
