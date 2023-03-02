@@ -9,7 +9,7 @@ import { Recipe } from "./pages/Recipe";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/SPA-restaurant">
         <Header/>
         <main className="container content">
           <Routes>
