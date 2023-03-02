@@ -16,7 +16,7 @@ function CategoryItem(props) {
       <p>{description}</p>
     </div>
     <div className="card-action">
-        <Link to={`/category/${id}`} className="btn deep-purple darken-3">Watch category</Link>
+        <Link to={`/category/${id}`} className="btn deep-orange accent-3">Watch category</Link>
     </div>
   </div>
 }
