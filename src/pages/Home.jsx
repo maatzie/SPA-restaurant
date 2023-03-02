@@ -11,13 +11,13 @@ function Home() {
             setCatalog(data.categories);
         })
     }, []);
-    return <main className="container content">
+    return <div>
         { catalog.length ? 
             <CategoryList catalog={catalog}/> 
             : <Preloader/>
         }
         
-    </main>
+    </div>
 }
 
 export {Home};
