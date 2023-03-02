@@ -62,3 +62,7 @@ nav {
   height: 500px;
   margin-top: 30px;
 }
+
+.search-field {
+  width: calc(100% - 100px);
+}
